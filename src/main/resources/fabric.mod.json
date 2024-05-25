@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "itementitypicker",
+  "version": "${version}",
+  "name": "itementitypicker",
+  "description": "Player-Filter mod",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/sjavi4/itementitypicker"
+  },
+  "license": "MIT",
+  "icon": "assets/itementitypicker/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.autobot.itementitypicker.client.ItementitypickerClient"
+    ],
+    "main": [
+      "me.autobot.itementitypicker.Itementitypicker"
+    ]
+  },
+  "mixins": [
+    "itementitypicker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

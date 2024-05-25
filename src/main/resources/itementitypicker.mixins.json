@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.autobot.itementitypicker.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "MixinClientPacketListener",
+    "MixinMinecraft"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
