@@ -1,7 +1,7 @@
 # itementitypicker
 A fabric mod for Player-based item entity filter in 1.20.4
 
-[Modrinth](https://www.modrinth.com/mod/itementitypicker)
+[Modrinth](https://modrinth.com/mod/itementitypicker)
 
 
 ## Command
