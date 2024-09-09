@@ -76,7 +76,8 @@ public abstract class MixinClientPacketListener {
         if (player == null) {
             return;
         }
-        player.connection.send(new ServerboundContainerClickPacket(0, 0, packet.getSlot(), 1, ClickType.THROW, ItemStack.EMPTY, Int2ObjectMaps.emptyMap()));
+        int containerId = player.hasContainerOpen() ? player.containerMenu.containerId : 0;
+        player.connection.send(new ServerboundContainerClickPacket(containerId, 0, packet.getSlot(), 1, ClickType.THROW, ItemStack.EMPTY, Int2ObjectMaps.emptyMap()));
 
     }
 }
